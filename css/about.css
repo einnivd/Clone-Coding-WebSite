@@ -1,3 +1,70 @@
 .about{
-    color: navy;
+    padding-bottom: 100px;
+    color: #111;
+}
+/* 회사소개 상단 */
+.about-top{
+    padding: 100px 0;
+    width: 100%;
+    background-color: #fff;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}  
+.about-txt h3{
+    font-family: 'NotoSansBold';
+    font-size: 44px;
+    padding-top: 25px;
+    margin-bottom: 40px;
+}
+.about-txt h4{
+    position: relative;
+    font-family: 'NotoSansMedium';
+    font-size: 21px;
+    margin-bottom: 20px;
+}
+.about-txt h4::before{
+    position: absolute;
+    left: -80px;
+    top: 20px;
+    width: 37px;
+    height: 5px;
+    background: #ed1c24;
+    content: '';
+}
+.about-txt p{
+    font-size: 15px;
+}
+/* 회사소개 하단 */
+.about-bottom{
+    padding-top: 100px;
+}
+.about-icon{
+    display: flex;
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    gap: 200px;
+}
+.about-icon li a{
+    display: block;
+    width: 103px;
+    height: 108px;
+    background: url(../images/bg_icon.png) no-repeat;
+}
+.about-icon li:nth-child(1) a{
+    background-position: 0px 0px;
+}
+.about-icon li:nth-child(2) a{
+    background-position: -116px 0px;
+}
+.about-icon li:nth-child(3) a{
+    background-position: -230px 0px;
+}
+.about span{
+    display: block;
+    padding-top: 130px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
 }
