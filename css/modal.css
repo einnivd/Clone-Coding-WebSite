@@ -1,0 +1,49 @@
+/* quick */
+.quick {
+  position: fixed;
+  bottom: 1%;
+  right: 1%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  z-index: 999;
+  /* background-color: silver; */
+}
+#chat span {
+  position: absolute;
+  top: 34px;
+  left: -180px;
+  background-color: #fff;
+  padding: 8px 15px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+}
+#chat span:hover span{
+    opacity: 1;
+    visibility: visible;
+}
+#shop{
+    width: 55px;
+    line-height: 55px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 900;
+    background-color: #fff;
+    border-radius: 50%;
+}
+#gotop{
+    width: 55px;
+    line-height: 55px;
+    border-radius: 50%;
+    background-color: #ed1c24;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.2);
+    display: none;
+}

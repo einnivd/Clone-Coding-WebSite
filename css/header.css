@@ -1,7 +1,21 @@
 /* 상단 */
 .header{
+    position: fixed;
     height: 80px;
-    /* background-color: thistle; */
+    width: 100%;
+    z-index: 99;
+    background-color: #fff;
+}
+/* header-bg */
+.header-bg{
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    /* height: 400px; */
+    height: 0px;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: all 0.5s;
 }
 .header-inner{
     position: relative;
@@ -40,10 +54,27 @@ nav{
     font-size: 19px;
     color: #000;
 }
+.gnb > li:hover > a{
+    color: rgb(231, 6, 6,);
+}
 .depth2{
-    padding: 50px 0;
+    opacity: 0;
+    /* opacity: 0 이라도 요소가 투명한 상태로 남아있으므로 */
+    /* visibility: hidden 으로 완전히 사라지게 만든다. */
+    visibility: hidden;
+    padding: 40px 0;
     display: none;
+    transition: all 0.5s;
     /* background-color: royalblue; */
+}
+.depth2 > li > a{
+    line-height: 35px;
+    color: #fff;
+}
+/* 메뉴 호버했을 때 */
+.gnb:hover .depth2{
+    opacity: 1;
+    visibility: visible;
 }
 /* 언어 */
 .lang{

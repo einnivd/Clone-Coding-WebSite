@@ -8,6 +8,7 @@
 @import url("cs.css");
 @import url("about.css");
 @import url("footer.css");
+@import url("modal.css");
 /* css 초기화 */
 *{
     margin: 0;
@@ -21,8 +22,11 @@ a{
     text-decoration: none;
     color: #333;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
-    font-family: "Noto Sans KR", sans-serif;;
+    font-family: "Noto Sans KR", sans-serif;
 }
 /* 공통 영역 */
 .inner{

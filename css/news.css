@@ -48,7 +48,7 @@
 .news-list li a::after{
     content: "";
     position: absolute;
-    top: 0;
+    top: 36px;
     right: 0;
     transform: translatey(-50%);
     width: 77px;
